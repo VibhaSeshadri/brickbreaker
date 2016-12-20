@@ -1,0 +1,47 @@
+body{
+    background-image: url("brick_background.jpeg");
+}
+@font-face {
+    font-family: 'pageFont';
+    src: url('Delusional.ttf');
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 400%;
+    display: none;
+    font-family: 'pageFont'
+}
+.iTextBox{
+    background-color: maroon;
+    height: 250px;
+    width:500px;
+    margin-left: 27%;
+    margin-right:25%;
+    padding: 5% 3% 5% 3%;
+    border-radius: 25%;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#iText{
+    text-align: center;
+    color: white;
+    font-family: 'pageFont';
+}
+/*.arrow{
+    width:7%;
+    float:right;
+    background-color: black;
+    margin-right: 25%;
+}*/
+#arrowBtn{
+    background: url(instructionArrow.png);
+    background-size: 15% 75px;
+    width: 15%;
+    height: 75px;
+    border-width: 0px;
+    float: right;
+    margin-right:25%;
+}
