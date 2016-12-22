@@ -3,14 +3,28 @@
     <title>Brickbreaker Game</title>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+            /*$(document).ready(function(){
+                alert("The paragraph was clicked.");
+                /*$("h1").fadeIn(3000);
+                $("#startBtn").click(function(){
+                    alert("The paragraph was clicked.");
+                    $(".iText, #arrowBtn, #startBtn").remove();
+                    $(".iTextBox").css("background-color", "white");
+                    $(".iTextBox").css("border-color","black");
+                });
+            });*/
+        </script>
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
-        <h1>Brick Breaker</h1>
-        <div class="iTextBox">
-            <p id="iText">Description and Instructions go here</p>
+        <h1>Brick Builder</h1>
+        <div class="iTextBox" id="iTextBox">
+            <p id="iText">Welcome to Brick Builder!</p>
+            <button id = "startBtn" onClick="clickStart()">Start</button>
         </div>
+        <canvas id="myCanvas" width="500" height = "250"></canvas> 
+        <button id = "reload" onClick="drawRectangles()">More Bricks</button>
         <button id="arrowBtn" onclick="instruction()"></button>
     </body>
     

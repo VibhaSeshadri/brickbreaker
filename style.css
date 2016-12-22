@@ -9,7 +9,7 @@ h1{
     text-align: center;
     color:white;
     font-size: 400%;
-    display: none;
+    /*display: none;*/
     font-family: 'pageFont'
 }
 .iTextBox{
@@ -24,18 +24,26 @@ h1{
     border-style: solid;
     border-width: 5px;
 }
+#myCanvas{
+    background-color: white;
+    /*height: 250px;
+    width:500px;*/
+    margin-left: 27%;
+    margin-right:25%;
+    padding: 5% 3% 5% 3%;
+    border-radius: 25%;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    display:none;
+}
 
 #iText{
     text-align: center;
     color: white;
     font-family: 'pageFont';
 }
-/*.arrow{
-    width:7%;
-    float:right;
-    background-color: black;
-    margin-right: 25%;
-}*/
+
 #arrowBtn{
     background: url(instructionArrow.png);
     background-size: 15% 75px;
@@ -44,4 +52,35 @@ h1{
     border-width: 0px;
     float: right;
     margin-right:25%;
+}
+#reload{
+    width: 15%;
+    height: 75px;
+    border-width: 0px;
+    float: right;
+    margin-right:25%; 
+    display:none; 
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'pageFont';
+}
+#startBtn{
+    margin-left: 38%;
+    margin-top: 25%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'pageFont';
+    visibility: hidden;
 }
